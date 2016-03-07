@@ -1,0 +1,41 @@
+div {
+  width:200px;
+  height:200px;
+  margin:10px auto;
+  background:red;
+  transition:all 1s ease;
+}
+
+div:hover {
+  background:green;
+  width:300px;
+  border-radius:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Initial state
+div {
+  width:200px;
+  height:200px;
+  margin:10px auto;
+  background:red;
+  //transition:all 1s ease;
+}
+
+div:hover {
+  background:green;
+  width:300px;
+  border-radius:200px;
+}
+*/

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ng-animate</title>
+  <script src="angular.js"></script>
+  <script src="ng_animate.js"></script>
+  <script src="animate.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="myApp" ng-controller="transitionController">
+  <input ng-model="search" placeholder="search" />
+  <ul>
+    <li ng-repeat="pie in pies | filter:search">
+      {{pie}}
+    </li>
+  </ul>
+
+</body>
+</html>

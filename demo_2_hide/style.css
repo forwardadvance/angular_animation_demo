@@ -1,0 +1,12 @@
+div {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+  transition:all ease 10s;
+}
+
+div.ng-hide {
+  opacity:0;
+  transform: translate(-100px,0);
+}
+

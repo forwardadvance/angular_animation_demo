@@ -1,0 +1,40 @@
+div {
+  padding:10px;
+  border:1px solid black;
+  font-size:100%
+}
+
+div.ng-leave {
+  font-size:100%;
+}
+
+div.ng-leave.ng-leave-active {
+  -webkit-animation-name: shrink;
+  -webkit-animation-duration: 0.5s;
+}
+
+div {
+  -webkit-animation-name: grow;
+  -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes shrink {
+  from {
+    font-size:100%
+  }
+  50% {
+    font-size:120%
+  }
+  to {
+    font-size:0%
+  }
+}
+
+@-webkit-keyframes grow {
+  from {
+    font-size:0%
+  }
+  to {
+    font-size:100%
+  }
+}

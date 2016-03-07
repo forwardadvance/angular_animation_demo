@@ -1,0 +1,49 @@
+
+@-webkit-keyframes pop {
+  0% {
+    font-size:100%;
+    color:black;
+  }
+  20% {
+    font-size:1500%;
+    color:blue;
+  }
+  50% {
+    font-size:90%;
+    color:red;
+  }
+  100% {
+    font-size:100%;
+  }
+}
+
+div {
+  -webkit-animation: pop 0.5s infinite
+}
+
+
+
+
+
+
+
+
+
+
+
+/*initial state*/
+
+
+/*@-webkit-keyframes pop {
+  from {
+    font-size:100%;
+  }
+  to {
+    font-size:500%;
+  }
+}
+
+div {
+  -webkit-animation: pop 5s infinite
+}
+*/

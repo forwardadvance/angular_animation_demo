@@ -1,0 +1,29 @@
+li {
+  transition:all ease 0.5s;
+}
+
+/* Leaving is easy */
+.ng-leave-active {
+  opacity:0;
+  height:0px;
+  transform: translate(0px,50px);
+}
+
+/* Entering is a little more involved
+Because we are adding the item to the screen it does not have an initial state to fade from */
+
+.ng-enter {
+  opacity:0;
+  transform: translate(0px,-50px);
+}
+
+.ng-enter.ng-enter-active {
+  opacity:1;
+  transform: translate(0,0);
+}
+
+.ng-leave-stagger, .ng-enter-stagger {
+  transition-delay: 0.2s;
+  transition-duration: 0s;
+}
+

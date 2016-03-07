@@ -1,0 +1,25 @@
+div {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+  transition:all linear 10s;
+}
+
+
+/* Leaving is easy */
+.ng-leave-active {
+  opacity:0;
+}
+
+/*
+Entering is a little more involved.
+Because we are adding the item to the screen it does not have an initial state to fade from.
+We have to specify an initial state, then override the state with a more specific selector.
+*/
+
+.ng-enter {
+  opacity:0;
+}
+.ng-enter.ng-enter-active {
+  opacity:1;
+}
